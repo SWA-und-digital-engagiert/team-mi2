@@ -8,12 +8,12 @@ Amplify.configure(awsconfig);
 
 export default withAuthenticator(App);
 
-function App({ signOut, user }) {
+function App({ signOut}) {
   return (
     <div className="App">
       <header className="App-header">
           <button onClick={signOut}>Sign out</button>
-          <h2>Hello my Users</h2>
+          <h2>Hello Users!</h2>
       </header>
     </div>
   );
