@@ -8,6 +8,7 @@ Amplify.configure(awsconfig);
 
 export default withAuthenticator(App);
 
+
 function App({ signOut}) {
   return (
     <div className="App">
