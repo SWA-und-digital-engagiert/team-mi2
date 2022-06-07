@@ -17,9 +17,9 @@ const formFields = {
         },
     },
     signUp: {
-        username: {
+        name: {
             labelHidden: false,
-            placeholder: 'Your Real Full Name',
+            placeholder: 'Your Name',
             isRequired: true,
             label: 'Name:'
         },
@@ -32,8 +32,8 @@ const formFields = {
         nickname: {
             labelHidden: false,
             placeholder: 'How your Friends call you',
-            isRequired: true,
-            label: 'Nickname (Displayed in Chat usw.):'
+            isRequired: false,
+            label: 'Nickname (Displayed in Chat etc.):'
         },
         email: {
             labelHidden: false,
@@ -67,7 +67,7 @@ export default function App() {
     return (
         <Authenticator
         formFields={formFields}
-        signUpAttributes={['email', 'phone_number', 'nickname', 'birthdate',]}
+        signUpAttributes={['email', 'phone_number', 'nickname', 'birthdate', 'name']}
         >
             {({ signOut, user }) => (
                 <main>
