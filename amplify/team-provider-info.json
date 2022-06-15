@@ -1,0 +1,21 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mariosdepression3-dev-114307-authRole",
+      "UnauthRoleArn": "arn:aws:iam::434405741460:role/amplify-mariosdepression3-dev-114307-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::434405741460:role/amplify-mariosdepression3-dev-114307-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-mariosdepression3-dev-114307-deployment",
+      "UnauthRoleName": "amplify-mariosdepression3-dev-114307-unauthRole",
+      "StackName": "amplify-mariosdepression3-dev-114307",
+      "StackId": "arn:aws:cloudformation:eu-central-1:434405741460:stack/amplify-mariosdepression3-dev-114307/53ef58c0-eca0-11ec-898c-06cc4e073978",
+      "AmplifyAppId": "duggllrilpo7"
+    },
+    "categories": {
+      "auth": {
+        "mariosdepression3b807b44f": {},
+        "true": {}
+      }
+    }
+  }
+}
