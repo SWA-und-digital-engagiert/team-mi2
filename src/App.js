@@ -71,7 +71,7 @@ export default function App() {
         >
             {({ signOut, user }) => (
                 <main>
-                    <h1>Willkommen {user.username}</h1>
+                    <h1>Willkommen {user.attributes.email}</h1>
                     <p id="whitespace"></p>
                     <button onClick={signOut}>Sign out</button>
                 </main>
