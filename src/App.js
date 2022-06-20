@@ -6,6 +6,8 @@ import '@aws-amplify/ui-react/styles.css';
 import awsExports from './aws-exports';
 Amplify.configure(awsExports);
 
+import logo from "./logo_hands_on_technology.svg"
+
 
 const formFields = {
     signIn: {
@@ -71,6 +73,7 @@ export default function App() {
         >
             {({ signOut, user }) => (
                 <main>
+                    <img id="logo" src={logo} alt={logo}>HANDS on TECHNOLOGY e.V.</img>
                     <h1>Willkommen {user.username}</h1>
                     <p id=whitespace></p>
                     <button onClick={signOut}>Sign out</button>
