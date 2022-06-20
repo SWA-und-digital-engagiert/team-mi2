@@ -73,7 +73,7 @@ export default function App() {
         >
             {({ signOut, user }) => (
                 <main>
-                    <LogoMessage/>
+
                     <h1>Willkommen {user.username}</h1>
                     <button onClick={signOut}>Sign out</button>
                 </main>
