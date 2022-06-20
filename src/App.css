@@ -37,6 +37,8 @@
   }
 }
 
-#whitespace {
+.h1 {
+  text-align: center;
+  alignment: center;
   margin: 20px;
 }
