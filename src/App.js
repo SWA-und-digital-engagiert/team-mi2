@@ -73,12 +73,15 @@ export default function App() {
         >
             {({ signOut, user }) => (
                 <main>
-                    <img id="logo" src={logo} alt={logo}>HANDS on TECHNOLOGY e.V.</img>
+                    <LogoMessage/>
                     <h1>Willkommen {user.username}</h1>
-                    <p id=whitespace></p>
                     <button onClick={signOut}>Sign out</button>
                 </main>
             )}
         </Authenticator>
     );
+}
+
+function LogoMessage() {
+    return <img id="logo" src={logo} alt={logo}>HANDS on TECHNOLOGY e.V.</img>
 }
