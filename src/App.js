@@ -25,7 +25,7 @@ const formFields = {
         },
         password: {
             labelHidden: false,
-            placeholder: 'Choos a safe Password',
+            placeholder: 'Choose a safe Password',
             isRequired: true,
             label: 'Password:'
         },
@@ -71,7 +71,8 @@ export default function App() {
         >
             {({ signOut, user }) => (
                 <main>
-                    <h1>Hello {user.username}</h1>
+                    <h1>Willkommen {user.username}</h1>
+                    <p id=whitespace></p>
                     <button onClick={signOut}>Sign out</button>
                 </main>
             )}
