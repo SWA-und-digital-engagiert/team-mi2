@@ -131,3 +131,14 @@
 #authenticator {
   padding-top: 250px;
 }
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: #6a6a6a;
+  font-size: 25px;
+}
+.dark-mode {
+  background-color: black;
+  color: #6a6a6a;
+}
