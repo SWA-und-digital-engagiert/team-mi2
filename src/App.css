@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.h1 {
+  text-align: center;
+  alignment: center;
+  margin: 20px;
+}
+
+#logo {
+  alignment: center;
+  margin: 10px;
+  border-radius: 5px;
+}

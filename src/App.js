@@ -25,7 +25,7 @@ const formFields = {
         },
         password: {
             labelHidden: false,
-            placeholder: 'Choos a safe Password',
+            placeholder: 'Choose a safe Password',
             isRequired: true,
             label: 'Password:'
         },
@@ -77,4 +77,8 @@ export default function App() {
             )}
         </Authenticator>
     );
+}
+
+function LogoMessage() {
+    return <img id="logo" src={logo} alt={logo}>HANDS on TECHNOLOGY e.V.</img>
 }
