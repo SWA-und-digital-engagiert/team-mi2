@@ -71,7 +71,7 @@ export default function App() {
         >
             {({ signOut, user }) => (
                 <main>
-                    <h1>Hello {user.username}</h1>
+                    <h1>Hello {user.attributes.nickname}</h1>
                     <button onClick={signOut}>Sign out</button>
                 </main>
             )}
