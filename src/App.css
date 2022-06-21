@@ -1,6 +1,11 @@
 #all {
   color: #6a6a6a;
-  font-family: "hot-font";
+  font-family: "hot-font", Fallback, sans-serif;
+}
+
+@font-face {
+  font-family: 'hot-font';
+  src:  url('./Roboto-Medium-webfont.woff') format('woff');
 }
 
 .h1 {

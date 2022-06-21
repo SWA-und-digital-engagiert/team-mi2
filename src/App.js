@@ -105,6 +105,7 @@ export default function App() {
                            href="https://www.hands-on-technology.org/de/"><img id="logo-top" src={logo} alt="HoT-logo"/></a>
                     </div>
                 </div>
+
                 <div id="center-div">
                     <Header/>
                 </div>
