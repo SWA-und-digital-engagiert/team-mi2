@@ -1,9 +1,15 @@
+#all {
+  color: #6a6a6a;
+  font-family: "hot-font";
+}
+
 .h1 {
   text-align: center;
   alignment: center;
   position: center;
   margin: 20px;
   padding: 20px;
+  font-size: medium;
 }
 
 .h2 {
@@ -16,11 +22,10 @@
 
 #top-bar {
   position: absolute;
-  width: 1vw;
+  width: 100%;
   height: 100px;
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
-  width: 30vw;
 }
 
 #center-div {
@@ -44,14 +49,15 @@
   border-radius: 5px;
   margin: 10px;
   padding: 10px;
-  width: 30vw;
+  width: 2fr;
+  min-width: 300px;
 }
 
 #logo-top.hover {
   align-items: flex-start;
   text-align: center;
   cursor: default;
-  transform: scale(1.1);
+  transform: scale(1.2);
   padding: 3px;
   border: 2px;
   box-sizing: border-box;

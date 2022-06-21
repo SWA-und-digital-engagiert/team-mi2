@@ -97,7 +97,7 @@ class Header extends React.Component {
 
 export default function App() {
     return (
-        <div>
+        <div id="all">
             <div id="top-bar">
                 <div id="div-logo-top">
                     <div className="header_inhalte">
