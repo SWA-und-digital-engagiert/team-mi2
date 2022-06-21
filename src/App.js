@@ -1,7 +1,7 @@
-import { Amplify } from 'aws-amplify';
+import {Amplify} from 'aws-amplify';
 import './App.css';
 
-import { Authenticator } from '@aws-amplify/ui-react';
+import {Authenticator} from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
 import awsExports from './aws-exports';
@@ -66,18 +66,57 @@ const formFields = {
     },
 }
 
+class Header extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {date: new Date()};
+    }
+
+    componentDidMount() {
+        this.ticker = setInterval(() => this.tick(), 1000);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.ticker)
+    }
+
+    tick() {
+        this.setState({
+            date: new Date()
+        });
+    }
+
+    render() {
+        return (
+            <div>
+                <h2>{this.state.date.toLocaleTimeString()}</h2>
+            </div>
+        );
+    }
+}
+
 export default function App() {
     return (
-        <div id="div-logo-top">
-            <div className="header_inhalte">
-                <a className="logo_hot" title="Zur Startseite"
-                   href="https://www.hands-on-technology.org/de/"><img id="logo-top" src={logo} alt="HoT-logo"/></a>
+        <div>
+            <div id="top-bar">
+                <div id="div-logo-top">
+                    <div className="header_inhalte">
+                        <a className="logo_hot" title="Zur Startseite"
+                           href="https://www.hands-on-technology.org/de/"><img id="logo-top" src={logo} alt="HoT-logo"/></a>
+                    </div>
+                </div>
+                <div id="center-div">
+                    <Header/>
+                </div>
+                <div id="center-div">
+                    <h1>Willkommen bei HANDS on TECHNOLOGY</h1>
+                </div>
             </div>
             <Authenticator
-            formFields={formFields}
-            signUpAttributes={['email', 'phone_number', 'nickname', 'birthdate', 'name']}
+                formFields={formFields}
+                signUpAttributes={['email', 'phone_number', 'nickname', 'birthdate', 'name']}
             >
-                {({ signOut, user }) => (
+                {({signOut, user}) => (
                     <main>
                         <button onClick={signOut}>Sign out</button>
                         <div>
