@@ -121,7 +121,7 @@ export default function App() {
                     {({signOut, user}) => (
                         <main>
                             <div id="center-div">
-                                <button onClick={signOut}>Sign out</button>
+                                <button class="glow-on-hover" type="button" onClick={signOut}>Sign out</button>
                                 <h1>Hello {user.attributes.nickname}</h1>
                             </div>
                         </main>
