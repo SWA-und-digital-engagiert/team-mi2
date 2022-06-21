@@ -1,14 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import logo from "./logo_hands_on_technology.jpg";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+/*const element = <Logo filename={logo}></Logo>
+ReactDOM.render(
+    element,
+    getApp(),
+    document.getElementById('root')
+)*/
 root.render(
     <React.StrictMode>
-        <img src={logo} alt="Logo"/>
         <App />
     </React.StrictMode>
 );

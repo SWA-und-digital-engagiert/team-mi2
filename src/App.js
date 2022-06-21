@@ -1,12 +1,14 @@
 import { Amplify } from 'aws-amplify';
+import './App.css';
 
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
 import awsExports from './aws-exports';
 import React from "react";
-Amplify.configure(awsExports);
+import logo from "./logo_hands_on_technology.svg";
 
+Amplify.configure(awsExports);
 
 const formFields = {
     signIn: {
@@ -66,16 +68,26 @@ const formFields = {
 
 export default function App() {
     return (
-        <Authenticator
-        formFields={formFields}
-        signUpAttributes={['email', 'phone_number', 'nickname', 'birthdate', 'name']}
-        >
-            {({ signOut, user }) => (
-                <main>
-                    <h1>Hello {user.attributes.nickname}</h1>
-                    <button onClick={signOut}>Sign out</button>
-                </main>
-            )}
-        </Authenticator>
+        <div id="div-logo-top">
+            <div className="header_inhalte">
+                <a className="logo_hot" title="Zur Startseite"
+                   href="https://www.hands-on-technology.org/de/"><img id="logo-top" src={logo} alt="HoT-logo"/></a>
+            </div>
+            <Authenticator
+            formFields={formFields}
+            signUpAttributes={['email', 'phone_number', 'nickname', 'birthdate', 'name']}
+            >
+                {({ signOut, user }) => (
+                    <main>
+                        <button onClick={signOut}>Sign out</button>
+                        <div>
+
+
+                        </div>
+                        <h1>Hello {user.attributes.nickname}</h1>
+                    </main>
+                )}
+            </Authenticator>
+        </div>
     );
 }
