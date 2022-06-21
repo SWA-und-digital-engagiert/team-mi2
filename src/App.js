@@ -4,6 +4,7 @@ import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
 import awsExports from './aws-exports';
+import React from "react";
 Amplify.configure(awsExports);
 
 
@@ -77,8 +78,4 @@ export default function App() {
             )}
         </Authenticator>
     );
-}
-
-function LogoMessage() {
-    return <img id="logo" src={logo} alt={logo}>HANDS on TECHNOLOGY e.V.</img>
 }
