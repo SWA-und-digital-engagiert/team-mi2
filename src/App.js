@@ -112,21 +112,23 @@ export default function App() {
                     <h1>Willkommen bei HANDS on TECHNOLOGY</h1>
                 </div>
             </div>
-            <Authenticator
-                formFields={formFields}
-                signUpAttributes={['email', 'phone_number', 'nickname', 'birthdate', 'name']}
-            >
-                {({signOut, user}) => (
-                    <main>
-                        <button onClick={signOut}>Sign out</button>
-                        <div>
+            <div id="authenticator">
+                <Authenticator
+                    formFields={formFields}
+                    signUpAttributes={['email', 'phone_number', 'nickname', 'birthdate', 'name']}
+                >
+                    {({signOut, user}) => (
+                        <main>
+                            <button onClick={signOut}>Sign out</button>
+                            <div>
 
 
-                        </div>
-                        <h1>Hello {user.attributes.nickname}</h1>
-                    </main>
-                )}
-            </Authenticator>
+                            </div>
+                            <h1>Hello {user.attributes.nickname}</h1>
+                        </main>
+                    )}
+                </Authenticator>
+            </div>
         </div>
     );
 }
