@@ -8,7 +8,7 @@ import logo from "./logo_hands_on_technology.jpg";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <img src={logo} alt={logo} />
+        <img src={logo} alt="Logo"/>
         <App />
     </React.StrictMode>
 );
