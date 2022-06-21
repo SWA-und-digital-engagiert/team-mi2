@@ -120,14 +120,12 @@ export default function App() {
                 >
                     {({signOut, user}) => (
                         <main>
-                            <button onClick={signOut}>Sign out</button>
-                            <div>
-
-
+                            <div id="center-div">
+                                <button onClick={signOut}>Sign out</button>
+                                <h1>Hello {user.attributes.nickname}</h1>
                             </div>
-                            <h1>Hello {user.attributes.nickname}</h1>
                         </main>
-                    )}
+                        )}
                 </Authenticator>
             </div>
         </div>
