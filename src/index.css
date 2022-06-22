@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+div {
+  padding: 20px;
+  background-color: white;
+  color: #6a6a6a;
+}
+
+.dark-mode div {
+  background-color: #2E2E2E;
+  color: white;
+}
+
+.dark-mode button {
+  color: white;
+  background-color: #2E2E2E;
+}

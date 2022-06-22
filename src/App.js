@@ -66,7 +66,7 @@ const formFields = {
     },
 }
 
-class DarkMode extends React.Component {
+/*class DarkMode extends React.Component {
     constructor(props) {
         super(props);
         this.state = {darkmode: false};
@@ -80,11 +80,11 @@ class DarkMode extends React.Component {
     render () {
         return (
             <div>
-                <button onClick={() => this.darkMode()}>Darkmode</button>
+                <button onClick={() => this.setState({darkmode: !this.state.darkmode})}>Darkmode</button>
             </div>
         )
     }
-}
+}*/
 
 class Header extends React.Component {
     constructor(props) {
@@ -149,7 +149,7 @@ export default function App() {
                 </Authenticator>
             </div>
             <div id="center-div">
-                <DarkMode/>
+                HANDS on TECHNOLOGY e.V.
             </div>
         </div>
     );

@@ -10,7 +10,8 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="public/logo192.png" />
+    <link rel="apple-touch-icon" href="public/favicon.png" />
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -29,6 +30,30 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <button class="glow-on-hover" type="button">Darkmode</button>
+    <script>
+
+      const bodyClasses = document.querySelector('body').classList
+      const buttonClasses = document.querySelector('button').classList
+
+      // set the default preference equal to the current System preference
+      const systemPrefersDarkMode = window
+              .matchMedia('(prefers-color-scheme: dark)')
+              .matches
+
+      if (systemPrefersDarkMode) {
+        bodyClasses.classList.add('dark-mode')
+        buttonClasses.classList.add('dark-mode')
+      }
+
+      // toggle dark mode when the button is clicked
+      document
+              .querySelector('button')
+              .addEventListener('click', () => {
+                bodyClasses.toggle('dark-mode')
+                buttonClasses.toggle('dark-mode')
+              })
+    </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
