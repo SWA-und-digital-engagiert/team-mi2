@@ -15,7 +15,6 @@ import Post from './Post';
 import Header from './Header';
 import CreatePost from './CreatePost';
 import Button from './Button';
-import DeletePost from './DeletePost'
 
 function Router({user, signOut}) {
 
