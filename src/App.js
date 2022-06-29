@@ -57,12 +57,12 @@ const formFields = {
             isRequired: true,
             label: 'Birthdate:',
         },
-        enter_code: {
+        /*enter_code: {
             labelHidden: false,
             placeholder: 'The Entercode to enter this organisation',
             isRequired: true,
             label: 'Entercode:',
-        }
+        }*/
     },
 }
 
